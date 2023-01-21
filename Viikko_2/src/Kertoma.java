@@ -21,12 +21,12 @@ joka laskee ja palauttaa kokonaislukuna annetun luvun kertoman.
 Kertoma lasketaan kertomalla luku kaikilla itseään pienemmillä kokonaisluvuilla, esimerkiksi luvun 5 kertoma on 5 x 4 x 3 x 2 x 1. */
 
 public static int kertoma(int luku){
-    int kerroin = 1;
-    int tulos = 0;
-    while(kerroin < luku)
-        tulos = kerroin * luku;
-        kerroin++;
-return tulos;
-} 
+    int vastaus = 1;
+    int i;
+    for(i = 1; i <= luku; i++) {
+        vastaus = vastaus * i;
+    } 
+        return vastaus;
+}
 
 }
