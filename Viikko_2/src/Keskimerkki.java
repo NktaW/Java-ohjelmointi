@@ -26,13 +26,14 @@ Jos merkkijonossa kuitenkin on parillinen määrä merkkejä (eli keskimmäistä
 
 public static char keskimerkki(String jono) {
     char m = '-';
-   if(jono.length() % 2 != 0){
-    return jono.charAt(jono.length() / 2);
+   if(jono.length() % 2 != 0) {
+        return jono.charAt(jono.length() / 2);
+
+    } else if(jono.length() % 2 == 0){
+        return m;
     }
-    if(jono.length() % 2 == 0){
     return m;
+
     }
-    return m;
-}
 
 }
